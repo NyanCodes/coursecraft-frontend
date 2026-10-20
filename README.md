@@ -39,3 +39,5 @@ Backend source: https://github.com/NyanCodes/coursecraft-backend
 Live frontend: https://coursecraft-frontend-beta.vercel.app
 
 Live API: https://coursecraft-backend-two.vercel.app
+
+Changes pushed to `main` trigger a new Vercel deployment automatically.
