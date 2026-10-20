@@ -89,7 +89,7 @@ function CourseForm() {
     <label className="wide">Course name<input name="name" required value={form.name} onChange={change} placeholder="e.g. Introduction to Web Design" /></label>
     <label className="wide">Topics <small>Separate topics with commas</small><input name="topics" required value={form.topics} onChange={change} placeholder="HTML, CSS, JavaScript" /></label>
     <label>Duration (days)<input name="durationDays" type="number" min="1" required value={form.durationDays} onChange={change} /></label>
-    <label>Price (THB)<input name="price" type="number" min="0" step="0.01" required value={form.price} onChange={change} /></label>
+    <label>Price (THB)<input name="price" type="number" min="0" step="100" required value={form.price} onChange={change} /></label>
     <label>Maximum students<input name="maxStudents" type="number" min="1" required value={form.maxStudents} onChange={change} /></label>
     <label>Status<select name="status" value={form.status} onChange={change}><option>Open</option><option>Close</option><option>Cancel</option></select></label>
     {error && <p className="alert wide">{error}</p>}<div className="form-actions wide"><Link className="button secondary" to={editing ? `/courses/${id}` : "/courses"}>Cancel</Link><button className="button primary" disabled={busy}>{busy ? "Saving…" : editing ? "Save changes" : "Create course"}</button></div>
