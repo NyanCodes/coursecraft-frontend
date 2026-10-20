@@ -35,3 +35,7 @@ Each username also has an email address in the form `username@example.com`. Thes
 Use the Vite framework preset with this repository as the project root, build command `npm run build`, and output directory `dist`. Set `VITE_API_URL` to the backend's deployed origin without a trailing slash. This app uses hash routing so direct links work on static hosting.
 
 Backend source: https://github.com/NyanCodes/coursecraft-backend
+
+Live frontend: https://coursecraft-frontend-beta.vercel.app
+
+Live API: https://coursecraft-backend-two.vercel.app
